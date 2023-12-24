@@ -1,0 +1,560 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(30deg, #000000, #01633c);
+    background-size: 200% 200%; 
+    animation: gradient 20s ease infinite; 
+    font-family: 'Product Sans', sans-serif;
+    color: #00ffa6;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overscroll-behavior: none;
+  }
+  
+  /* Definir la animación */
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+      header {
+        text-align: center;
+        margin-bottom: 0;
+      }
+  
+      header img {
+        margin-top: 10px;
+        margin-bottom: 0;  
+        width: 400px; 
+      }
+  
+      section {
+        padding: 1rem;
+        text-align: center;
+      }
+  
+      #biography {
+        max-width: 800px;  
+        margin: auto; 
+      }
+  
+      #biography p {
+        text-align: justify;
+        margin: auto;
+        margin-bottom: 20px;
+        max-width: 100%; 
+      }
+      #biography h2 {
+        margin-top: -75px; 
+        padding-top: 0;
+      }
+      img {
+        border-radius: 50%;
+        transition: all 0.3s ease;
+      }
+      #biography img {
+        margin-bottom: 20px; 
+      }
+  
+      img:hover {
+        transform: scale(1.1);
+      }
+  
+      a {
+        color: #00ffa6;
+        text-decoration: none;
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+      }
+  
+      a:hover {
+        background: #00ffa6;
+        color: rgb(0, 0, 0);
+      }
+
+      
+      #streaming-links {
+        text-align: center; /* Center the links */
+        padding: 2rem 0; /* Spacing above and below the links */
+      }
+      
+      #streaming-links a {
+        display: inline-block;
+        color: #ffffff; /* White text color */
+        text-decoration: none; /* Removes underline from links */
+        font-weight: bold; /* Bold text */
+        padding: 0.75rem 1.5rem; /* Padding inside the buttons */
+        border: 2px solid #00ffa6; /* Solid border with the same color as the background */
+        border-radius: 25px; /* Rounded corners */
+        margin: 0.5rem; /* Space around the buttons */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+      }
+      
+      #streaming-links a:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover for a "lifting" effect */
+        transform: scale(1.05); /* Slightly larger scale on hover */
+      }
+      
+  #relief-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    background-image: url('photo.png');
+    background-size: cover;
+    box-shadow: 3px 3px 5px #000, -3px -3px 5px #fff;
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    border-image: linear-gradient(to bottom, red, yellow);
+    border-image-slice: 1;
+  }
+  
+  #artist-playlist {
+        text-align: center;
+        max-width: 800px;
+        margin: auto;
+      }
+  
+      #artist-playlist iframe {
+        max-width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+  
+      #posts {
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+    
+  
+      .post-card {
+        width: 240px;
+        padding: 1rem;
+        border: 2px solid #00ffa6;
+        border-radius: 12px;
+        margin: 1rem;
+        text-align: center;
+      }
+  
+      .post-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .post-card:hover {
+        background-color: #00ffa6;
+    }
+    
+      .menu-icon .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 3px auto;
+    background-color: #00ffa6;
+  }
+  
+  .menu-icon {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: auto;
+    padding-top: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: #00ffa6;
+  }
+  
+  #menu a:hover {
+    background-color: #00ffa6;  /* fondo amarillo */
+    color: rgb(0, 0, 0);  /* texto negro */
+  }
+  
+  #menu.show {
+    right: 0;
+  }
+  
+  .skill-card {
+    width: 140px;
+    padding: 1rem;
+    border: 2px solid #00ffa6;
+    border-radius: 12px;
+    margin: 0.5rem;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  #post-content {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    text-align: justify;
+    border-radius: 12px;
+    color: #fff;
+}
+
+#post-content img {
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border: 5px solid #00ffa6; /* Borde claro alrededor de la imagen */
+    box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.05), /* Sombra interna fina */
+        0 4px 8px rgba(0, 0, 0, 0.1),  /* Sombra suave externa */
+        0 8px 16px rgba(0, 0, 0, 0.2), /* Sombra más amplia y oscura */
+        0 16px 32px rgba(0, 0, 0, 0.25); /* Sombra muy amplia y oscura */
+}
+
+
+#post-content h2 {
+    margin-top: 1.5rem;
+    color: #00ffa6;
+}
+
+#post-content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+#translateBtn {
+    background-color: #00ffa6; /* Color de fondo verde */
+    border: none; /* Elimina el borde predeterminado */
+    padding: 12px 20px; /* Relleno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-size: 16px; /* Tamaño del texto */
+    color: #000; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor a mano al pasar por encima */
+    transition: background-color 0.3s ease; /* Efecto suave al cambiar el color de fondo */
+    margin-top: 20px; /* Margen en la parte superior para separarlo del contenido */
+}
+
+#translateBtn:hover {
+    background-color: #00dd8f; /* Color de fondo verde claro al pasar por encima */
+}
+
+#portfolioBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ffa6;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    margin-top: 1rem;
+}
+
+#portfolioBtn:hover {
+    background-color: #00997d;
+    transform: scale(1.05);
+}
+
+#portfolioBtn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,255,166,0.5);
+}
+
+.styled-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ffa6;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Product Sans', sans-serif;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre los íconos y el texto */
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #00d78a; /* Un tono más oscuro cuando se pasa el mouse por encima */
+}
+
+.styled-button:active {
+    background-color: #00b570; /* Un tono aún más oscuro cuando se hace clic */
+}
+
+.styled-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 255, 166, 0.5); /* Un resplandor alrededor del botón cuando está enfocado */
+}
+
+/* Estilo básico del botón */
+#returnHomeBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ffa6; /* Color de fondo verde */
+    color: #000; /* Color de letra negro */
+    font-weight: bold;
+    font-family: 'Product Sans', sans-serif;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre los íconos y el texto */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animación suave */
+    text-decoration: none;
+}
+
+/* Efecto de hover - cuando pasas el ratón por encima */
+#returnHomeBtn:hover {
+    background-color: #00d78a; /* Un tono más oscuro de verde */
+    transform: scale(1.05); /* Agrandar un poco el botón */
+}
+
+/* Efecto de presionar - cuando haces clic en el botón */
+#returnHomeBtn:active {
+    transform: scale(0.95); /* Reducir un poco el botón */
+}
+
+/* Efecto de foco - cuando el botón está enfocado */
+#returnHomeBtn:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 255, 166, 0.5); /* Resplandor alrededor del botón */
+}
+
+.menu-icon {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .bar {
+    background-color: black; 
+    height: 5px;
+    width: 100%;
+    border-radius: 3px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .skill-card {
+    display: inline-flex; /* Uso de flexbox */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    width: 140px; /* Ancho definido */
+    min-width: 140px; /* Asegurarse de que todos los cuadros tengan este ancho mínimo */
+    max-width: 140px; /* Limitar el ancho máximo */
+    font-weight: bold;  /* Letras en negrita */
+    min-height: 50px; /* Asegurarse de que todos los cuadros tengan esta altura mínima */
+    height: 50px; /* Altura definida */
+    font-size: 22px; /* Establecer un tamaño de fuente específico */
+    padding: 1rem;
+    background-color: #00ffa6;
+    color: #000;
+    border: 2px solid #00ffa6;
+    border-radius: 12px;
+    margin: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover {
+    background-color: #00e68a;
+    transform: scale(1.05);
+}
+
+.skill-card {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+    min-height: 50px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;  /* Letras en negrita */
+    padding: 1rem;
+    background-color: #00ffa6;
+    color: #000;
+    border: 2px solid #00ffa6;
+    border-radius: 12px;
+    margin: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover {
+    background-color: #00e68a;
+    transform: scale(1.05);
+}
+
+#shareArticleBtn {
+    /* Estilos generales para el botón */
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #00ffa6;
+    border-radius: 5px;
+    background-color: #000; 
+    color: #00ffa6;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#shareArticleBtn:hover {
+    background-color: #00ffa6;
+    color: #000;
+}
+
+.linkedin-status p {
+  font-size: 2rem;
+  border: 3px solid #00ffa6;
+  padding: 20px;
+  border-radius: 12px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.linkedin-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.linkedin-status p {
+  font-size: 2rem;
+  border: 3px solid #00ffa6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffa6, 0 0 20px #00ffa6; /* Sombra de texto para un resplandor */
+  animation: pulse 2s infinite; /* Animación de pulso */
+  transition: all 0.3s ease-in-out; /* Transición suave para el efecto hover */
+}
+
+/* Efecto Hover */
+.linkedin-status p:hover {
+  border-color: #c8ff00;
+  color: #c8ff00;
+  box-shadow: 0 0 15px #c8ff00, 0 0 25px #c8ff00;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-15px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.spotify-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+h2 {
+  font-size: 1.8rem; /* Aún más reducido */
+  margin-bottom: 10px;
+  color: #00ffa6; 
+  font-weight: bold; /* Título en negrita */
+  animation: fadeIn 1.2s ease-out 0.2s backwards;
+  letter-spacing: 1px; /* Espaciado entre letras para mejorar legibilidad */
+}
+
+
+/* Añade un hover sutil al enlace del iframe (si decides hacerlo clickable) */
+a:hover iframe {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+.other-platforms {
+  margin-top: 20px;
+}
+
+.other-platforms a {
+  margin: 0 10px;
+  color: #00ffa6; 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.other-platforms a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.streaming-links {
+  text-align: center; /* Center the links */
+  padding: 2rem 0; /* Spacing above and below the links */
+}
+
+.streaming-links a {
+  display: inline-block;
+  color: #ffffff; /* White text color */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold; /* Bold text */
+  padding: 0.75rem 1.5rem; /* Padding inside the buttons */
+  border: 2px solid #00ffa6; /* Solid border with the same color as the background */
+  border-radius: 25px; /* Rounded corners */
+  margin: 0.5rem; /* Space around the buttons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.streaming-links a:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover for a "lifting" effect */
+  transform: scale(1.05); /* Slightly larger scale on hover */
+}
