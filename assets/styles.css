@@ -159,53 +159,67 @@ body {
         background-color: #00ffa6;
     }
     
-      .menu-icon .bar {
-    display: block;
-    width: 30px;
-    height: 3px;
-    margin: 3px auto;
-    background-color: #00ffa6;
-  }
-  
-  .menu-icon {
-    position: fixed;
-    top: 15px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  #menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 200px;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-y: auto;
-    padding-top: 50px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  #menu a {
-    display: block;
-    padding: 15px;
-    text-align: center;
-    color: #00ffa6;
-  }
-  
-  #menu a:hover {
-    background-color: #00ffa6;  /* fondo amarillo */
-    color: rgb(0, 0, 0);  /* texto negro */
-  }
-  
-  #menu.show {
-    right: 0;
-  }
+    .menu-icon .bar {
+      display: block;
+      width: 30px;
+      height: 3px;
+      margin: 3px auto;
+      background-color: #00ffa6;
+    }
+    
+    .menu-icon {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    
+    .hidden {
+      display: none;
+    }
+    
+    #menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 250px; /* Ajustado para dar más espacio */
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.95); /* Ligeramente más opaco para un mejor contraste */
+      overflow-y: auto;
+      padding-top: 50px;
+      transition: all 0.5s ease; /* Transición más suave */
+    }
+    
+    #menu ul {
+      list-style: none; /* Quita los puntos */
+      padding: 0; /* Elimina el padding por defecto de la lista */
+      margin: 0; /* Elimina el margen por defecto de la lista */
+    }
+    
+    #menu li {
+      margin: 10px 0; /* Añade un margen vertical a los elementos de la lista */
+    }
+    
+    #menu a {
+      display: block;
+      padding: 15px 20px; /* Añade un padding para mejor tocabilidad */
+      text-align: left; /* Alinea el texto a la izquierda */
+      color: #00ffa6;
+      text-decoration: none; /* Elimina el subrayado de los enlaces */
+      transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para hover */
+    }
+    
+    #menu a:hover {
+      background-color: #00ffa6;  
+      color: #000;  /* Cambia el texto a negro para mejor visibilidad */
+      text-decoration: none; /* Asegura que el subrayado se elimine al pasar el ratón */
+    }
+    
+    #menu.show {
+      right: 0;
+    }
+    
   
   .skill-card {
     width: 140px;
@@ -423,6 +437,13 @@ body {
     background-color: #00e68a;
     transform: scale(1.05);
 }
+
+.knowledge-card .badge {
+  width: auto; /* Or you can set a specific width, e.g., 200px */
+  height: 50px; /* Adjust the height to increase the size of the badges */
+  margin: 10px; /* Optional: Adds space around the badges */
+}
+
 
 #shareArticleBtn {
     /* Estilos generales para el botón */
