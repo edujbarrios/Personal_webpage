@@ -4,5 +4,5 @@
 
 Backup 🔄 of the main structure design of my personal webpage 🖥️. Future add-ons will be added. Built with HTML, CSS & JavaScript.
 
-🔗 SEE IT LIVE: [HERE](https://edujbarrios.github.io/personalweb/)
+🔗 SEE IT LIVE: [HERE](https://edujbarrios.github.io/eyemadmusicwebsite/)
 
