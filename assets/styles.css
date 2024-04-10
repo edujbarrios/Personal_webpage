@@ -185,7 +185,7 @@ body {
       right: 0;
       width: 250px; /* Ajustado para dar más espacio */
       height: 100vh;
-      background-color: rgba(0, 0, 0, 0.95); /* Ligeramente más opaco para un mejor contraste */
+      background: linear-gradient(30deg, #000000, #01633c);
       overflow-y: auto;
       padding-top: 50px;
       transition: all 0.5s ease; /* Transición más suave */
